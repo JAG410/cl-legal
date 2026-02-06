@@ -8,10 +8,10 @@
     /* ---- Global ---- */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #e6f0fa;
+      background-color: #e6f0fa; /* Light blue outside box */
       margin: 0;
       padding: 0;
-      color: #1c2d4a;
+      color: #ffffff;
     }
 
     a { text-decoration: none; transition: 0.3s; }
@@ -21,10 +21,11 @@
     .container {
       max-width: 900px;
       margin: 40px auto;
-      background-color: #ffffff;
+      background-color: #0b1f4c; /* Dark blue box */
       padding: 40px 50px;
       border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      color: #ffffff; /* Default text color inside box */
     }
 
     /* ---- Header ---- */
@@ -34,8 +35,8 @@
     }
 
     header h1 {
-      background-color: #1c2d4a;
-      color: #ffffff;
+      background-color: #08183a;
+      color: #ffff00; /* Yellow title */
       padding: 20px;
       border-radius: 12px 12px 0 0;
       margin: 0;
@@ -45,7 +46,7 @@
     header .subtitle {
       font-size: 1.1rem;
       margin-top: 10px;
-      color: #33475b;
+      color: #ffeb3b; /* Light yellow subtitle */
     }
 
     /* ---- Section ---- */
@@ -55,9 +56,10 @@
 
     section h2 {
       font-size: 1.5rem;
-      border-bottom: 3px solid #0056b3;
+      border-bottom: 3px solid #ffeb3b; /* Yellow underline */
       padding-bottom: 6px;
       margin-bottom: 15px;
+      color: #ffff00; /* Yellow headings */
     }
 
     ul {
@@ -71,28 +73,46 @@
     /* ---- Links / Buttons ---- */
     .button-link {
       display: inline-block;
-      background-color: #0056b3;
-      color: white;
+      background-color: #ffeb3b; /* Yellow button */
+      color: #0b1f4c; /* Dark text for contrast */
       padding: 8px 16px;
       border-radius: 6px;
       margin-top: 10px;
+      font-weight: bold;
     }
 
     .button-link:hover {
-      background-color: #003f7f;
+      background-color: #ffd600;
+    }
+
+    a {
+      color: #ffff00; /* Yellow links */
+    }
+
+    a:hover {
+      color: #ffeb3b;
     }
 
     /* ---- Footer ---- */
     footer {
       text-align: center;
       margin-top: 50px;
-      color: #777777;
+      color: #ffeb3b; /* Light yellow footer */
       font-size: 0.9rem;
     }
 
     /* ---- FAQ Styling ---- */
     .faq p {
       margin: 8px 0 15px 0;
+    }
+
+    /* Highlight strong text inside box */
+    strong {
+      color: #ffeb3b; /* Yellow highlights */
+    }
+
+    em {
+      color: #ffd600; /* Slightly different yellow for emphasis */
     }
 
   </style>
@@ -168,4 +188,3 @@
   </div>
 </body>
 </html>
-
