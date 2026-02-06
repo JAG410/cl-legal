@@ -4,107 +4,168 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Command Legacy Support</title>
-
   <style>
+    /* ---- Global ---- */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f7fa;
-      line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e6f0fa;
       margin: 0;
       padding: 0;
+      color: #1c2d4a;
     }
 
+    a { text-decoration: none; transition: 0.3s; }
+    a:hover { opacity: 0.8; }
+
+    /* ---- Container ---- */
     .container {
       max-width: 900px;
       margin: 40px auto;
-      background: #ffffff;
-      padding: 30px 40px;
-      border-radius: 8px;
+      background-color: #ffffff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
 
-    h1 {
-      color: #1c2d4a;
+    /* ---- Header ---- */
+    header {
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 40px;
     }
 
-    .subtitle {
-      text-align: center;
-      font-weight: bold;
-      margin-bottom: 30px;
+    header h1 {
+      background-color: #1c2d4a;
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 12px 12px 0 0;
+      margin: 0;
+      font-size: 2.2rem;
     }
 
-    h2 {
-      margin-top: 30px;
-      color: #1c2d4a;
-      border-bottom: 2px solid #eee;
+    header .subtitle {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #33475b;
+    }
+
+    /* ---- Section ---- */
+    section {
+      margin-bottom: 35px;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      border-bottom: 3px solid #0056b3;
       padding-bottom: 6px;
+      margin-bottom: 15px;
     }
 
     ul {
       padding-left: 20px;
     }
 
-    a {
-      color: #0056b3;
-      text-decoration: none;
+    li {
+      margin-bottom: 8px;
     }
 
-    a:hover {
-      text-decoration: underline;
+    /* ---- Links / Buttons ---- */
+    .button-link {
+      display: inline-block;
+      background-color: #0056b3;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      margin-top: 10px;
     }
+
+    .button-link:hover {
+      background-color: #003f7f;
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #777777;
+      font-size: 0.9rem;
+    }
+
+    /* ---- FAQ Styling ---- */
+    .faq p {
+      margin: 8px 0 15px 0;
+    }
+
   </style>
 </head>
-
 <body>
   <div class="container">
 
-    <h1>Command Legacy Support</h1>
-    <p class="subtitle">Need help? We’ve got your back.</p>
+    <!-- Header -->
+    <header>
+      <h1>Command Legacy Support</h1>
+      <p class="subtitle">Need help? We’ve got your back.</p>
+    </header>
 
-    <h2>About Command Legacy</h2>
-    <p>Command Legacy is a private, officer-only platform that combines:</p>
-    <ul>
-      <li><strong>Police-verified forum</strong> – a trusted community where supervisors and officers share leadership advice, lessons learned, and professional experiences.</li>
-      <li><strong>AI legal assistant</strong> – real-time guidance on state laws and policies to support confident on-scene decisions.</li>
-      <li><strong>Leadership resources</strong> – curated content and peer discussion to help new corporals, field training officers, and sergeants succeed in their roles.</li>
-    </ul>
-    <p>Access is limited to <em>verified law enforcement personnel only</em>. There are no subscriptions at this time – participation is free once verified.</p>
+    <!-- About -->
+    <section>
+      <h2>About Command Legacy</h2>
+      <p>Command Legacy is a private, officer-only platform that combines:</p>
+      <ul>
+        <li><strong>Police-verified forum</strong> – a trusted community where supervisors and officers share leadership advice, lessons learned, and professional experiences.</li>
+        <li><strong>AI legal assistant</strong> – real-time guidance on state laws and policies to support confident on-scene decisions.</li>
+        <li><strong>Leadership resources</strong> – curated content and peer discussion to help new corporals, field training officers, and sergeants succeed in their roles.</li>
+      </ul>
+      <p>Access is limited to <em>verified law enforcement personnel only</em>. Participation is free once verified.</p>
+    </section>
 
-    <h2>How to Join</h2>
-    <p>
-      To request access, complete the sign-up form here:<br>
-      <a href="https://docs.google.com/forms/d/1pz5TK5OCosJt6Kwlxpt1L81rTCLpbDvOX1JRRjuaSsE/edit" target="_blank">
-        Command Legacy Sign-Up Form
-      </a>
-    </p>
-    <p>Our team reviews each application to confirm law enforcement credentials before granting access.</p>
+    <!-- How to Join -->
+    <section>
+      <h2>How to Join</h2>
+      <p>To request access, complete the sign-up form below:</p>
+      <a href="https://docs.google.com/forms/d/1pz5TK5OCosJt6Kwlxpt1L81rTCLpbDvOX1JRRjuaSsE/edit" class="button-link" target="_blank">Sign-Up Form</a>
+      <p>Our team reviews each application to confirm law enforcement credentials before granting access.</p>
+    </section>
 
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: <a href="mailto:support@commandlegacy.io">support@commandlegacy.io</a></li>
-      <li>Forum (for verified members): <a href="https://forum.commandlegacy.us">Command Legacy Test Grounds</a></li>
-    </ul>
+    <!-- Contact -->
+    <section>
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:support@commandlegacy.io">support@commandlegacy.io</a></li>
+        <li>Forum (for verified members): <a href="https://forum.commandlegacy.us" target="_blank">Command Legacy Test Grounds</a></li>
+      </ul>
+    </section>
 
-    <h2>FAQs</h2>
-    <p><strong>Is Command Legacy free?</strong><br>
-      Yes, during this beta test all features are currently free for verified users.
-    </p>
+    <!-- FAQ -->
+    <section class="faq">
+      <h2>FAQs</h2>
+      <p><strong>Is Command Legacy free?</strong><br>
+        Yes, during this beta test all features are currently free for verified users.
+      </p>
 
-    <p><strong>Why do I need to be verified?</strong><br>
-      Command Legacy is a trusted space for officers. Verification ensures discussions remain professional, private, and relevant to law enforcement.
-    </p>
+      <p><strong>Why do I need to be verified?</strong><br>
+        Verification ensures discussions remain professional, private, and relevant to law enforcement.
+      </p>
 
-    <p><strong>Do I need an account to see content?</strong><br>
-      Yes. Content is available only to verified members. Non-members can review this page for information about what the platform offers before signing up.
-    </p>
+      <p><strong>Do I need an account to see content?</strong><br>
+        Yes. Content is available only to verified members. Non-members can review this page to learn about the platform before signing up.
+      </p>
+    </section>
 
-    <h2>Policies</h2>
-    <ul>
-      <li><a href="https://tos.commandlegacy.io/">Terms of Service</a></li>
-      <li><a href="https://tos.commandlegacy.io/privacy.html">Privacy Policy</a></li>
-    </ul>
+    <!-- Policies -->
+    <section>
+      <h2>Policies</h2>
+      <ul>
+        <li><a href="https://tos.commandlegacy.io/">Terms of Service</a></li>
+        <li><a href="https://tos.commandlegacy.io/privacy.html">Privacy Policy</a></li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      © Command Legacy
+    </footer>
 
   </div>
 </body>
 </html>
+
